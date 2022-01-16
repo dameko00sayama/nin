@@ -16,6 +16,8 @@
             $this->body = $body;
         }
 
+        //デザインパターンについて調べる
+
         //処理として受け渡すrender関数部分
         public function render(){
             echo $this->title.'が、今から'.$this->body;
@@ -24,8 +26,8 @@
 ?>
 
 <?php
-    //クラスファイルを外部化するなら、ここで「require_once」
 
+    //クラスファイルを外部化するなら、ここで「require_once」
     $ninja = new NINJA('PHPの問題集', 'スタート！');
     $ninja->render();
 
